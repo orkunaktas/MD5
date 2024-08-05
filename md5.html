@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f5f9;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 400px; /* Genişlik arttırıldı */
+    text-align: center;
+}
+
+h1 {
+    margin-top: 0;
+    color: #333;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+input, button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.output-container {
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 4px;
+    display: none;
+    margin-top: 15px;
+    text-align: left;
+}
+</style>
+<body>
+
+
+
+    <div class="container">
+        <h1>Şifreleme Araçları</h1>
+        <div class="input-container">
+            <input type="text" id="inputText" placeholder="Metni girin...">
+            <button id="encryptMD5">MD5 Şifrele</button>
+            <button id="encryptSHA1">SHA-1 Şifrele</button>
+            <button id="encryptROT13">ROT13 Şifrele</button>
+        </div>
+        <div class="output-container">
+            <p id="outputText"></p>
+        </div>
+    </div>
+
+
+</body>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+    <script src="ork.js"></script>
+
+
+
+
+
+</html>
